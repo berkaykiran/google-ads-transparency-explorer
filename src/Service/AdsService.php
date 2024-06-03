@@ -19,10 +19,19 @@ class AdsService
     public function prepareDashboardData($data)
     {
         $regions = $this->regionService->getRegions();
-        $adsCounts = $this->adsModel->fetchAdsCount(array_keys($regions), $data['advertiser_id'], $data['start_date'], $data['end_date']);
+        $advertiser_id = $data['advertiser_id'];
+        $start_date = $data['start_date'];
+        $end_date = $data['end_date'];
+
+        $adsCounts = $this->adsModel->fetchAdsCount(
+            $regions,
+            $advertiser_id,
+            $start_date,
+            $end_date
+        );
         uasort($adsCounts, function ($a, $b) {
             return $b - $a;
         });
-        return ['adsCounts' => $adsCounts, 'regions' => $regions];
+        return ['adsCounts' => $adsCounts, 'regions' => $regions, 'advertiser_id' => $advertiser_id];
     }
 }

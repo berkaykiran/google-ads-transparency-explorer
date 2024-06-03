@@ -34,9 +34,15 @@ class AdsModel
     private function buildPromises($regions, $advertiser_id, $start_date, $end_date)
     {
         $promises = [];
-        foreach ($regions as $region_code) {
-            $encodedData = $this->buildRequestBody($advertiser_id, $region_code, $start_date, $end_date);
-            $promises[$region_code] = $this->client->postAsync('', ['body' => "f.req=$encodedData"]);
+        foreach ($regions as $regionObject) {
+            $regionCode = $regionObject->getRegionCode();
+            $encodedData = $this->buildRequestBody(
+                $advertiser_id,
+                $regionCode,
+                $start_date,
+                $end_date
+            );
+            $promises[$regionCode] = $this->client->postAsync('', ['body' => "f.req=$encodedData"]);
         }
         return $promises;
     }
@@ -44,12 +50,12 @@ class AdsModel
     private function processResults($results)
     {
         $adsCounts = [];
-        foreach ($results as $region => $response) {
+        foreach ($results as $regionCode => $response) {
             if ($response['state'] === 'fulfilled') {
                 $data = json_decode($response['value']->getBody()->getContents(), true);
-                $adsCounts[$region] = $data['5'] ?? 0;
+                $adsCounts[$regionCode] = $data['5'] ?? 0;
             } else {
-                $adsCounts[$region] = 0;
+                $adsCounts[$regionCode] = 0;
             }
         }
         return $adsCounts;
