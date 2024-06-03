@@ -1,4 +1,4 @@
-<!-- View/AdsDashboard.php -->
+<!-- View/AdsCountByCompetitor.php -->
 <h1>
     <?php
     //TODO: Competitor Name and Info 

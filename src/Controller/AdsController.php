@@ -25,7 +25,7 @@ class AdsController
             uasort($adsCounts, function ($a, $b) {
                 return $b - $a;
             });
-            $this->loadView('AdsDashboard', ['adsCounts' => $adsCounts, 'regions' => $regions]);
+            $this->loadView('AdsCountByCompetitor', ['adsCounts' => $adsCounts, 'regions' => $regions]);
         } else {
             echo "Please provide advertiser ID, start date, and end date.";
         }
