@@ -1,5 +1,7 @@
 {
     "cSpell.words": [
         "jsons"
-    ]
+    ],
+    "todohighlight.isEnable": true,
+    "php.problems.scope": "user"
 }
