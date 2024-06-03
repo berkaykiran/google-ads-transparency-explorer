@@ -4,17 +4,29 @@ namespace Model;
 
 class Region
 {
-    public function getRegions()
+    private $region_name;
+    private $region_code;
+    private $region_alpha_2;
+
+    public function __construct($region_name, $region_code, $region_alpha_2)
     {
-        $jsonPath = __DIR__ . '/../../resources/jsons/regions.json';
-        $json = file_get_contents($jsonPath);
-        $regionsArray = json_decode($json, true);
-        $regions = [];
-        foreach ($regionsArray as $region) {
-            if (isset($region['1']) && isset($region['4'])) {
-                $regions[$region['1']] = $region['4'];  // Store region code as key and name as value
-            }
-        }
-        return $regions;
+        $this->region_name = $region_name;
+        $this->region_code = $region_code;
+        $this->region_alpha_2 = $region_alpha_2;
+    }
+
+    public function getRegionName()
+    {
+        return $this->region_name;
+    }
+
+    public function getRegionCode()
+    {
+        return $this->region_code;
+    }
+
+    public function getRegionAlpha2()
+    {
+        return $this->region_alpha_2;
     }
 }

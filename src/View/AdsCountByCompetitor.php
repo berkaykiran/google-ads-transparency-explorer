@@ -1,9 +1,9 @@
 <!-- View/AdsCountByCompetitor.php -->
-<h1>
+<h3>
     <?php
     //TODO: Competitor Name and Info 
     ?>
-</h1>
+</h3>
 <?php if (!empty($adsCounts)) : ?>
     <table>
         <thead>

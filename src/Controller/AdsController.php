@@ -2,32 +2,25 @@
 
 namespace Controller;
 
-use Model\AdsModel;
-use Model\Region;
+use Service\AdsService;
 
 class AdsController
 {
-    private $model;
-    private $region;
+    private $adsService;
 
-    public function __construct(AdsModel $model, Region $region)
+    public function __construct(AdsService $adsService)
     {
-        $this->model = $model;
-        $this->region = $region;
+        $this->adsService = $adsService;
     }
 
     public function showDashboard()
     {
         $data = $this->getRequestData();
         if ($this->isValidRequest($data)) {
-            $regions = $this->region->getRegions();
-            $adsCounts = $this->model->fetchAdsCount(array_keys($regions), $data['advertiser_id'], $data['start_date'], $data['end_date']);
-            uasort($adsCounts, function ($a, $b) {
-                return $b - $a;
-            });
-            $this->loadView('AdsCountByCompetitor', ['adsCounts' => $adsCounts, 'regions' => $regions]);
+            $dashboardData = $this->adsService->prepareDashboardData($data);
+            $this->loadView('AdsCountByCompetitor', $dashboardData);
         } else {
-            echo "Please provide advertiser ID, start date, and end date.";
+            $this->loadView('ErrorView', ['error' => 'Please provide advertiser ID, start date, and end date.']);
         }
     }
 
