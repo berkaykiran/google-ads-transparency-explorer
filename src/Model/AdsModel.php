@@ -18,34 +18,43 @@ class AdsModel
             'verify' => false, // Disable SSL verification for 'localhost'
             'headers' => [
                 'Connection' => 'keep-alive',
-                'User-Agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
+                'User-Agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+                'Content-Type' => 'application/x-www-form-urlencoded'
             ]
         ]);
     }
 
     public function fetchAdsCount(array $regions, $advertiser_id, $start_date, $end_date)
     {
+        $promises = $this->buildPromises($regions, $advertiser_id, $start_date, $end_date);
+        $results = Utils::settle($promises)->wait();
+        return $this->processResults($results);
+    }
+
+    private function buildPromises($regions, $advertiser_id, $start_date, $end_date)
+    {
         $promises = [];
         foreach ($regions as $region_code) {
             $encodedData = $this->buildRequestBody($advertiser_id, $region_code, $start_date, $end_date);
-            $promises[$region_code] = $this->client->postAsync('', [
-                'body' => "f.req=$encodedData",
-                'headers' => ['Content-Type' => 'application/x-www-form-urlencoded']
-            ]);
+            $promises[$region_code] = $this->client->postAsync('', ['body' => "f.req=$encodedData"]);
         }
+        return $promises;
+    }
 
-        $results = Utils::settle($promises)->wait();
+    private function processResults($results)
+    {
         $adsCounts = [];
         foreach ($results as $region => $response) {
             if ($response['state'] === 'fulfilled') {
                 $data = json_decode($response['value']->getBody()->getContents(), true);
-                $adsCounts[$region] = $data['5'] ?? 0; // Assuming '5' is where the ad count is stored
+                $adsCounts[$region] = $data['5'] ?? 0;
             } else {
-                $adsCounts[$region] = 0; // Handle error or rejected promise
+                $adsCounts[$region] = 0;
             }
         }
         return $adsCounts;
     }
+
 
     private function buildRequestBody($advertiser_id, $region_code, $start_date, $end_date)
     {
