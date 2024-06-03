@@ -1,0 +1,280 @@
+[
+	{
+		"advertiser_id": "AR15714032992319963137",
+		"advertiser_name": "D-MOBILELAB SPAIN S.A.",
+		"advertiser_known_names": ["Digital Virgo"],
+		"based_in": "Spain",
+		"advertiser_type": ["VAS"],
+		"transparency_link": "https://adstransparency.google.com/advertiser/AR15714032992319963137?region=anywhere&preset-date=Last+7+days"
+	},
+	{
+		"advertiser_id": "AR17531000421353521153",
+		"advertiser_name": "Telecoming S.A",
+		"advertiser_known_names": [""],
+		"based_in": "Spain",
+		"advertiser_type": ["VAS"],
+		"transparency_link": "https://adstransparency.google.com/advertiser/AR17531000421353521153?region=anywhere&preset-date=Last+7+days"
+	},
+	{
+		"advertiser_id": "AR09363287983865724929",
+		"advertiser_name": "Eureka Entertainment Marketing Inc.",
+		"advertiser_known_names": [
+			"Cliq Digital",
+			"TIMOTHY JON BARTLEY",
+			"Vickstead Limited",
+			"GLONDON LIMITED"
+		],
+		"based_in": "United States",
+		"advertiser_type": ["Credit Card"],
+		"transparency_link": "https://adstransparency.google.com/advertiser/AR09363287983865724929?region=anywhere&preset-date=Last+7+days"
+	},
+	{
+		"advertiser_id": "AR02529084826460356609",
+		"old_advertiser_ids": ["AR02997067280531062785"],
+		"advertiser_name": "ASALES, SERVICIOS DE MARKETING EN INTERNET",
+		"advertiser_known_names": ["airG", "Track Mobile B.V."],
+		"based_in": "Mexico",
+		"advertiser_type": ["Leadgen"],
+		"transparency_link": "https://adstransparency.google.com/advertiser/AR02529084826460356609?region=anywhere&preset-date=Last+7+days"
+	},
+	{
+		"advertiser_id": "AR03948331549375594497",
+		"advertiser_name": "Mobitrans FZ LLC",
+		"advertiser_known_names": [
+			"first screen",
+			"Mobile Link B.V.",
+			"Pulse Digital B.V."
+		],
+		"based_in": "United Arab Emirates",
+		"advertiser_type": ["VAS"],
+		"transparency_link": "https://adstransparency.google.com/advertiser/AR03948331549375594497?region=anywhere&preset-date=Last+7+days"
+	},
+	{
+		"advertiser_id": "AR10940225496205492225",
+		"advertiser_name": "C.F.M. CONTENT FOR MOBILE LTD",
+		"advertiser_known_names": ["Content for Mobile LTD"],
+		"based_in": "Cyprus",
+		"advertiser_type": ["VAS"],
+		"transparency_link": "https://adstransparency.google.com/advertiser/AR10940225496205492225?region=anywhere&preset-date=Last+7+days"
+	},
+	{
+		"advertiser_id": "AR18260719350673571841",
+		"old_advertiser_ids": ["AR02997067280531062785"],
+		"advertiser_name": "Marvel Media Cyprus Limited",
+		"advertiser_known_names": ["MARVEL MEDIA CYPRUS LIMITED"],
+		"based_in": "Cyprus",
+		"advertiser_type": ["VAS"],
+		"transparency_link": "https://adstransparency.google.com/advertiser/AR18260719350673571841?region=anywhere&preset-date=Last+7+days"
+	},
+	{
+		"advertiser_id": "AR05161152557678067713",
+		"advertiser_name": "Marvel Media Sdn Bhd",
+		"advertiser_known_names": ["MARVEL MEDIA CYPRUS LIMITED"],
+		"based_in": "Malaysia",
+		"advertiser_type": ["VAS"],
+		"transparency_link": "https://adstransparency.google.com/advertiser/AR05161152557678067713?region=anywhere&preset-date=Last+7+days"
+	},
+	{
+		"advertiser_id": "AR14316928440723308545",
+		"advertiser_name": "HotBot Limited",
+		"advertiser_known_names": [""],
+		"based_in": "Canada",
+		"advertiser_type": ["Credit Card"],
+		"transparency_link": "https://adstransparency.google.com/advertiser/AR14316928440723308545?region=anywhere&preset-date=Last+7+days"
+	},
+	{
+		"advertiser_id": "AR05217507854361034753",
+		"advertiser_name": "INTECH SAL OFFSHORE",
+		"advertiser_known_names": [""],
+		"based_in": "Lebanon",
+		"advertiser_type": ["VAS"],
+		"transparency_link": "https://adstransparency.google.com/advertiser/AR05217507854361034753?region=anywhere&preset-date=Last+7+days"
+	},
+	{
+		"advertiser_id": "AR17859763194151567361",
+		"advertiser_name": "HongKong Luckstar Technology Co., Ltd.",
+		"advertiser_known_names": ["Marvel media"],
+		"based_in": "Hong Kong",
+		"advertiser_type": ["VAS", "Apps", "Agency"],
+		"transparency_link": "https://adstransparency.google.com/advertiser/AR17859763194151567361?region=anywhere&preset-date=Last+7+days"
+	},
+	{
+		"advertiser_id": "AR04025562276902731777",
+		"advertiser_name": "IDB MOBILE TECHNOLOGY D.O.O.",
+		"advertiser_known_names": ["US Cellcom"],
+		"based_in": "Croatia",
+		"advertiser_type": ["VAS"],
+		"transparency_link": "https://adstransparency.google.com/advertiser/AR04025562276902731777?region=anywhere&preset-date=Last+7+days"
+	},
+	{
+		"advertiser_id": "AR06332825580261605377",
+		"advertiser_name": " 3P SLU",
+		"advertiser_known_names": ["ECOM DIGITAL 43 SL"],
+		"based_in": "Andorra",
+		"advertiser_type": ["Credit Card"],
+		"transparency_link": "https://adstransparency.google.com/advertiser/AR06332825580261605377?region=anywhere&preset-date=Last+7+days"
+	},
+	{
+		"advertiser_id": "AR00897364387784818689",
+		"old_advertiser_ids": ["AR16984525618882281473"],
+		"advertiser_name": "Mobile Minded B.V.",
+		"advertiser_known_names": ["Rebublic Response BV"],
+		"based_in": "Italy",
+		"advertiser_type": ["VAS"],
+		"transparency_link": "https://adstransparency.google.com/advertiser/AR00897364387784818689?region=anywhere&preset-date=Last+7+days"
+	},
+	{
+		"advertiser_id": "AR14125606751701041153",
+		"advertiser_name": "SMART MOBILE TECH - FZCO",
+		"advertiser_known_names": ["upstream", "Mobile Arts"],
+		"based_in": "United Arab Emirates",
+		"advertiser_type": ["VAS"],
+		"transparency_link": "https://adstransparency.google.com/advertiser/AR14125606751701041153?region=anywhere&preset-date=Last+7+days"
+	},
+	{
+		"advertiser_id": "AR07068061858929836033",
+		"advertiser_name": "S P TWO LTD",
+		"advertiser_known_names": [""],
+		"based_in": "United Kingdom",
+		"advertiser_type": ["VAS"],
+		"transparency_link": "https://adstransparency.google.com/advertiser/AR07068061858929836033?region=anywhere&preset-date=Last+7+days"
+	},
+	{
+		"advertiser_id": "AR14651644038193610753",
+		"advertiser_name": "MOBILE MEDIA COM SAS",
+		"advertiser_known_names": [""],
+		"based_in": "France",
+		"advertiser_type": ["VAS"],
+		"transparency_link": "https://adstransparency.google.com/advertiser/AR14651644038193610753?region=anywhere&preset-date=Last+7+days"
+	},
+	{
+		"advertiser_id": "AR01094974493043982337",
+		"old_advertiser_ids": ["AR15251465736095268865"],
+		"advertiser_name": "Digital Angels srl",
+		"advertiser_known_names": ["Wirelessworks", "Cell Candy BV", "Mobile Minded BV", "Mypengo Mobile B.V.", "Playbay B.V.", "Triple Tonic BV", "Creative Clicks"],
+		"based_in": "Netherlands",
+		"advertiser_type": ["VAS"],
+		"transparency_link": "https://adstransparency.google.com/advertiser/AR01094974493043982337?region=anywhere&preset-date=Last+7+days"
+	},
+	{
+		"advertiser_id": "AR06241220662346645505",
+		"advertiser_name": "CSS Media GmbH",
+		"advertiser_known_names": ["Olistech GmbH"],
+		"based_in": "Switzerland",
+		"advertiser_type": ["VAS"],
+		"transparency_link": "https://adstransparency.google.com/advertiser/AR06241220662346645505?region=anywhere&preset-date=Last+7+days"
+	},
+	{
+		"advertiser_id": "AR03527982344201830401",
+		"advertiser_name": "T2O ADMEDIA SERVICES SL.",
+		"advertiser_known_names": [""],
+		"based_in": "Spain",
+		"advertiser_type": ["VAS", "Agency"],
+		"transparency_link": "https://adstransparency.google.com/advertiser/AR03527982344201830401?region=anywhere&preset-date=Last+7+days"
+	},
+	{
+		"advertiser_id": "AR00270952719152316417",
+		"advertiser_name": "TIMWE SPIN LAB, LDA",
+		"advertiser_known_names": ["TIMWE"],
+		"based_in": "Portugal",
+		"advertiser_type": ["VAS"],
+		"transparency_link": "https://adstransparency.google.com/advertiser/AR00270952719152316417?region=anywhere&preset-date=Last+7+days"
+	},
+	{
+		"advertiser_id": "AR03736887388815753217",
+		"advertiser_name": "Red27Mobile Limited",
+		"advertiser_known_names": ["Cliq Digital", "Zimiq GmbH"],
+		"based_in": "Portugal",
+		"advertiser_type": ["VAS"],
+		"transparency_link": "https://adstransparency.google.com/advertiser/AR03736887388815753217?region=anywhere&preset-date=Last+7+days"
+	},
+	{
+		"advertiser_id": "AR14707580798903517185",
+		"advertiser_name": "Zimiq GmbH",
+		"advertiser_known_names": [""],
+		"based_in": "Germany",
+		"advertiser_type": ["Credit Card"],
+		"transparency_link": "https://adstransparency.google.com/advertiser/AR14707580798903517185?region=anywhere&preset-date=Last+7+days"
+	},
+	{
+		"advertiser_id": "AR10942234166510485505",
+		"advertiser_name": "BlueVision Interactive Limited",
+		"advertiser_known_names": ["Marvel media"],
+		"based_in": "Hong Kong",
+		"advertiser_type": ["VAS", "Agency"],
+		"transparency_link": "https://adstransparency.google.com/advertiser/AR10942234166510485505?region=anywhere&preset-date=Last+7+days"
+	},
+	{
+		"advertiser_id": "AR04923524902092275713",
+		"old_advertiser_ids": ["AR18276915225670189057"],
+		"advertiser_name": "NORDSTAR MEDIA LTD",
+		"advertiser_known_names": ["Anton Wanser"],
+		"based_in": "United Kingdom",
+		"advertiser_type": ["VAS"],
+		"transparency_link": "https://adstransparency.google.com/advertiser/AR04923524902092275713?region=anywhere&preset-date=Last+7+days"
+	},
+	{
+		"advertiser_id": "AR06037866948862148609",
+		"advertiser_name": "Happy Apps S.L.",
+		"advertiser_known_names": ["Telecoming"],
+		"based_in": "Spain",
+		"advertiser_type": ["VAS"],
+		"transparency_link": "https://adstransparency.google.com/advertiser/AR06037866948862148609?region=anywhere&preset-date=Last+7+days"
+	},
+	{
+		"advertiser_id": "AR17782780372136755201",
+		"advertiser_name": "MEDIA RANCH DMCC",
+		"advertiser_known_names": ["MT2 FZ LLC"],
+		"based_in": "United Arab Emirates",
+		"advertiser_type": ["VAS"],
+		"transparency_link": "https://adstransparency.google.com/advertiser/AR17782780372136755201?region=anywhere&preset-date=Last+7+days"
+	},
+	{
+		"advertiser_id": "AR03750663994633879553",
+		"advertiser_name": "TDSB",
+		"advertiser_known_names": ["mixsocial", "TECHIES DIGITAL SDN. BHD."],
+		"based_in": "Malaysia",
+		"advertiser_type": ["VAS"],
+		"transparency_link": "https://adstransparency.google.com/advertiser/AR03750663994633879553?region=anywhere&preset-date=Last+7+days"
+	},
+	{
+		"advertiser_id": "AR02506234019897671681",
+		"advertiser_name": "TIM w.e. FZ LLC",
+		"advertiser_known_names": ["mobile cash"],
+		"based_in": "United Arab Emirates",
+		"advertiser_type": ["VAS"],
+		"transparency_link": "https://adstransparency.google.com/advertiser/AR02506234019897671681?region=anywhere&preset-date=Last+7+days"
+	},
+	{
+		"advertiser_id": "AR06095003379837173761",
+		"advertiser_name": "Telestark FZ-LLC",
+		"advertiser_known_names": [""],
+		"based_in": "United Arab Emirates",
+		"advertiser_type": ["VAS"],
+		"transparency_link": "https://adstransparency.google.com/advertiser/AR06095003379837173761?region=anywhere&preset-date=Last+7+days"
+	},
+	{
+		"advertiser_id": "AR13159622152464367617",
+		"advertiser_name": "ADS TECH - FZCO",
+		"advertiser_known_names": ["upstream"],
+		"based_in": "United Arab Emirates",
+		"advertiser_type": ["VAS"],
+		"transparency_link": "https://adstransparency.google.com/advertiser/AR13159622152464367617?region=anywhere&preset-date=Last+7+days"
+	},
+	{
+		"advertiser_id": "AR09888195865758138369",
+		"advertiser_name": "Basebone Advertising Limited",
+		"advertiser_known_names": [""],
+		"based_in": "Cyprus",
+		"advertiser_type": ["VAS"],
+		"transparency_link": "https://adstransparency.google.com/advertiser/AR09888195865758138369?region=anywhere&preset-date=Last+7+days"
+	},
+	{
+		"advertiser_id": "AR11609678406500745217",
+		"advertiser_name": "Bennu Entertainment Europa SL",
+		"advertiser_known_names": [""],
+		"based_in": "Spain",
+		"advertiser_type": ["VAS"],
+		"transparency_link": "https://adstransparency.google.com/advertiser/AR11609678406500745217?region=anywhere&preset-date=Last+7+days"
+	}
+]
