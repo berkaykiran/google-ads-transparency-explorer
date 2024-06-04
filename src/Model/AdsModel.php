@@ -10,18 +10,9 @@ class AdsModel
     private $client;
     private $apiUrl = 'https://adstransparency.google.com/anji/_/rpc/SearchService/SearchCreatives';
 
-    public function __construct()
+    public function __construct(Client $client)
     {
-        $this->client = new Client([
-            'base_uri' => $this->apiUrl,
-            'proxy' => 'localhost:8888',
-            'verify' => false, // Disable SSL verification for 'localhost'
-            'headers' => [
-                'Connection' => 'keep-alive',
-                'User-Agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
-                'Content-Type' => 'application/x-www-form-urlencoded'
-            ]
-        ]);
+        $this->client = $client;
     }
 
     public function fetchAdsCount(array $regions, $advertiser_id, $start_date, $end_date)
@@ -61,11 +52,10 @@ class AdsModel
         return $adsCounts;
     }
 
-
     private function buildRequestBody($advertiser_id, $region_code, $start_date, $end_date)
     {
         $request_body = [
-            "2" => 0, // Number of results to return, 0 means only count
+            "2" => 0,
             "3" => [
                 "13" => ["1" => [$advertiser_id]],
                 "12" => [
@@ -74,24 +64,22 @@ class AdsModel
                 ],
             ],
             "7" => [
-                "1" => 1, // Just some example parameters
-                "2" => 30, // You might need to adjust these as per your API's specification
+                "1" => 1,
+                "2" => 30,
                 "3" => 2528
             ]
         ];
 
-        // Include region code if provided
         if ($region_code) {
             $request_body["3"]["8"] = [$region_code];
         }
 
-        // Include date range if both dates are provided
         if ($start_date && $end_date) {
             $request_body["3"]["6"] = $start_date;
             $request_body["3"]["7"] = $end_date;
         }
 
         $jsonData = json_encode($request_body);
-        return urlencode($jsonData); // URL encode the JSON string
+        return urlencode($jsonData);
     }
 }
