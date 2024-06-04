@@ -3,30 +3,41 @@
 namespace Controller;
 
 use Service\AdsService;
-use Controller\RequestHandler;
-use Service\ViewLoader;
 
 class AdsController
 {
     private $adsService;
-    private $requestHandler;
-    private $viewLoader;
 
-    public function __construct(AdsService $adsService, RequestHandler $requestHandler, ViewLoader $viewLoader)
+    public function __construct(AdsService $adsService)
     {
         $this->adsService = $adsService;
-        $this->requestHandler = $requestHandler;
-        $this->viewLoader = $viewLoader;
     }
 
     public function showDashboard()
     {
-        $data = $this->requestHandler->getRequestData();
-        if ($this->requestHandler->isValidRequest($data)) {
+        $data = $this->getRequestData();
+        if ($this->isValidRequest($data)) {
             $dashboardData = $this->adsService->prepareDashboardData($data);
-            $this->viewLoader->loadView('AdsCountByCompetitor', $dashboardData);
+            $this->loadView('AdsCountByCompetitor', $dashboardData);
         } else {
-            $this->viewLoader->loadView('ErrorView', ['error' => 'Please provide advertiser ID, start date, and end date.']);
+            $this->loadView('ErrorView', ['error' => 'Please provide advertiser ID, start date, and end date.']);
         }
+    }
+
+    private function getRequestData()
+    {
+        $request_body = file_get_contents('php://input');
+        return json_decode($request_body, true);
+    }
+
+    private function isValidRequest($data)
+    {
+        return isset($data['advertiser_id'], $data['start_date'], $data['end_date']);
+    }
+
+    private function loadView($viewName, $data)
+    {
+        extract($data);
+        require __DIR__ . '/../View/' . $viewName . '.php';
     }
 }

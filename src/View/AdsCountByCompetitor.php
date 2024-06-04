@@ -1,3 +1,4 @@
+<!-- View/AdsCountByCompetitor.php -->
 <h3>
     <?= htmlspecialchars($advertiser_id) ?>
 </h3>
