@@ -2,7 +2,7 @@
 
 namespace Controller;
 
-use Model\CompetitorService;
+use Service\CompetitorService;
 
 class HomeController
 {

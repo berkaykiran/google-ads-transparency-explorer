@@ -1,7 +1,7 @@
 <?php
 
 use Model\AdsModel;
-use Model\CompetitorService;
+use Service\CompetitorService;
 use Service\AdsService;
 use Service\RegionService;
 
