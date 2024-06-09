@@ -12,9 +12,10 @@ class AdsModel
 
     public function __construct()
     {
+        $config = include __DIR__ . '/../../config/app_config.php';
         $this->client = new Client([
             'base_uri' => $this->apiUrl,
-            'proxy' => 'localhost:8888',
+            'proxy' => $config['proxy_enabled'] ? $config['proxy_url'] : null,
             'verify' => false, // Disable SSL verification for 'localhost'
             'headers' => [
                 'Connection' => 'keep-alive',
