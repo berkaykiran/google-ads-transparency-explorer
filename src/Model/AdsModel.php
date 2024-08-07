@@ -13,6 +13,8 @@ class AdsModel
     public function __construct()
     {
         $config = include __DIR__ . '/../../config/app_config.php';
+        // TODO: Get cookies from the extension, and figure out a way to validate them before querying the API
+        $cookies = $config['cookies'] ?? '';
         $this->client = new Client([
             'base_uri' => $this->apiUrl,
             'proxy' => $config['proxy_enabled'] ? $config['proxy_url'] : null,
@@ -20,7 +22,8 @@ class AdsModel
             'headers' => [
                 'Connection' => 'keep-alive',
                 'User-Agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
-                'Content-Type' => 'application/x-www-form-urlencoded'
+                'Content-Type' => 'application/x-www-form-urlencoded',
+                'Cookie' => $cookies
             ]
         ]);
     }

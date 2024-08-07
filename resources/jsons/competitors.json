@@ -205,6 +205,14 @@
 		"transparency_link": "https://adstransparency.google.com/advertiser/AR10942234166510485505?region=anywhere&preset-date=Last+7+days"
 	},
 	{
+		"advertiser_id": "AR13897862159460728833",
+		"advertiser_name": "WEBEYE MOBILE(HK) LIMITED",
+		"advertiser_known_names": ["Marvel media"],
+		"based_in": "Hong Kong",
+		"advertiser_type": ["VAS", "Agency"],
+		"transparency_link": "https://adstransparency.google.com/advertiser/AR10942234166510485505?region=anywhere&preset-date=Last+7+days"
+	},
+	{
 		"advertiser_id": "AR04923524902092275713",
 		"old_advertiser_ids": ["AR18276915225670189057"],
 		"advertiser_name": "NORDSTAR MEDIA LTD",
@@ -276,5 +284,29 @@
 		"based_in": "Spain",
 		"advertiser_type": ["VAS"],
 		"transparency_link": "https://adstransparency.google.com/advertiser/AR11609678406500745217?region=anywhere&preset-date=Last+7+days"
+	},
+	{
+		"advertiser_id": "AR17464127333878202369",
+		"advertiser_name": "ZODIAC TECHNOLOGIES DMCC",
+		"advertiser_known_names": ["first screen"],
+		"based_in": "United Arab Emirates",
+		"advertiser_type": ["Credit Card"],
+		"transparency_link": "https://adstransparency.google.com/advertiser/AR17464127333878202369?region=anywhere&preset-date=Last+7+days"
+	},
+	{
+		"advertiser_id": "AR07816200116276035585",
+		"advertiser_name": "Mobici",
+		"advertiser_known_names": ["Telefuture"],
+		"based_in": "Belgium",
+		"advertiser_type": ["VAS"],
+		"transparency_link": "https://adstransparency.google.com/advertiser/AR07816200116276035585?region=anywhere&preset-date=Last+7+days"
+	},
+	{
+		"advertiser_id": "AR10291209827011002369",
+		"advertiser_name": "Supermoba International, Lda",
+		"advertiser_known_names": ["Mobwizards", "Go4Mobility"],
+		"based_in": "Portugal",
+		"advertiser_type": ["VAS"],
+		"transparency_link": "https://adstransparency.google.com/advertiser/AR10291209827011002369?region=anywhere&preset-date=Last+7+days"
 	}
 ]
